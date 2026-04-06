@@ -1,0 +1,80 @@
+.backdrop {
+  position: fixed;
+  padding: 20px 20px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  transition:
+    opacity 0.3s,
+    visibility 0.3s;
+  @media screen and (min-width: $bp-tablet) {
+    padding: 20px 0;
+  }
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+}
+.modal {
+  position: relative;
+  padding: 72px 24px;
+  width: 100%;
+  height: 100%;
+  max-width: 723px;
+  max-height: 590px;
+  background: var(--primary-dark-cl)
+    url('../../images/backgrounds/modal-background.svg') no-repeat center/cover;
+  border-radius: 48px;
+  overflow-y: auto;
+  @media screen and (min-width: $bp-mobile) {
+    padding: 42px 100px;
+  }
+  @media screen and (min-width: $bp-tablet) {
+    padding: 42px 206px;
+    max-height: 681px;
+  }
+
+  &__btn-close {
+    position: absolute;
+    padding: 0;
+    top: 42px;
+    right: 42px;
+    background-color: transparent;
+    color: var(--primary-white-cl);
+    border: none;
+    cursor: pointer;
+  }
+  &__title {
+    font-family: var(--secondary-font);
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 1.16;
+    text-align: center;
+    color: var(--primary-white-cl);
+    margin-bottom: 20px;
+    @media screen and (min-width: $bp-tablet) {
+      font-weight: 700;
+      font-size: 64px;
+      margin-bottom: 40px;
+    }
+  }
+  &__text {
+    font-weight: 600;
+    text-align: center;
+    color: var(--primary-white-cl);
+    margin-bottom: 16px;
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 32px;
+    }
+  }
+}
+.no-scroll {
+  overflow: hidden;
+}

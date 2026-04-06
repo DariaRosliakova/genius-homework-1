@@ -1,0 +1,45 @@
+.socials {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    fill: var(--primary-dark-cl);
+    transition: fill 0.2s;
+  }
+  &__icon--white {
+    fill: var(--primary-white-cl);
+    transition: fill 0.2s;
+    width: 32px;
+    height: 32px;
+    @media screen and (min-width: $bp-desktop) {
+      width: 42px;
+      height: 42px;
+    }
+    &:hover {
+      fill: var(--primary-light-cl);
+    }
+  }
+
+  &__icon:hover {
+    fill: var(--primary-light-cl);
+  }
+
+  &--small-gap {
+    gap: 16px;
+    justify-content: left;
+  }
+  &--medium-gap {
+    gap: 20px;
+    justify-content: center;
+    @media screen and (min-width: $bp-tablet) {
+      justify-content: start;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      gap: 24px;
+    }
+  }
+  &--large-gap {
+    gap: 32px;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,28 @@
+.carousel-btn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0; /* щоб стрілочки не стискались, коли їх витісняє розмір карток */
+  padding: 0;
+  width: 44px;
+  height: 44px;
+  background-color: transparent;
+  fill: var(--primary-dark-cl);
+  border-radius: 50%;
+  border: 1px solid var(--primary-dark-cl);
+  transition:
+    fill 0.2s,
+    background-color 0.2s;
+  @media screen and (min-width: $bp-tablet) {
+    display: flex;
+  }
+  &:hover {
+    background-color: var(--primary-light-cl);
+    border: none;
+    fill: var(--primary-white-cl);
+  }
+
+  &.next {
+    transform: rotate(180deg);
+  }
+}

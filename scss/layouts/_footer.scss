@@ -1,0 +1,133 @@
+.footer {
+  position: relative;
+  padding: 32px 0 66px;
+  background: var(--primary-dark-cl)
+    url(/images/backgrounds/footer-mobile-background.svg) no-repeat center/cover;
+  @media screen and (min-width: $bp-tablet) {
+    padding: 56px 0;
+    background-image: url(/images/backgrounds/footer-background.svg);
+  }
+  &::before {
+    display: none;
+    position: absolute;
+    width: 247px;
+    height: 152px;
+    content: '';
+    right: 0;
+    bottom: 0;
+    background-image: url(../../images/footer/footer-bottles.png);
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+    }
+
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../../images/footer/footer-bottles@2x.png);
+      background-size: 247px 152px;
+    }
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 16px;
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      text-align: start;
+      gap: 20px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    gap: 42px;
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+
+  &__address {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    gap: 8px;
+    @media screen and (min-width: $bp-tablet) {
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+
+  &__logo {
+    flex-grow: 1;
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 0.9;
+    color: var(--primary-light-cl);
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 24px;
+    }
+  }
+  &__logo-link {
+    width: 57px;
+    @media screen and (min-width: $bp-tablet) {
+      width: 83px;
+    }
+  }
+
+  &__menu,
+  &__address-list,
+  &__address-info {
+    flex-grow: 1;
+  }
+
+  &__menu-link,
+  &__address-link,
+  &__address-policy {
+    font-style: normal;
+    font-size: 16px;
+    color: var(--primary-white-cl);
+    transition: color 0.2s;
+  }
+
+  &__menu-link,
+  &__address-policy {
+    font-size: 14px;
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 16px;
+    }
+  }
+
+  &__menu-item:not(:last-of-type),
+  &__address-item {
+    margin-bottom: 16px;
+  }
+
+  &__address-policy {
+    margin-bottom: 8px;
+    @media screen and (min-width: $bp-tablet) {
+      margin-bottom: 16px;
+    }
+  }
+
+  &__address-item {
+    display: none;
+    @media screen and (min-width: $bp-tablet) {
+      display: block;
+    }
+  }
+
+  &__address-copyright {
+    font-style: normal;
+    font-size: 12px;
+    color: var(--secondary-light-cl);
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 13px;
+    }
+  }
+}

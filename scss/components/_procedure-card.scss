@@ -1,0 +1,37 @@
+.procedure-card {
+  position: relative;
+  margin: 0 auto;
+  max-width: 500px;
+  height: 416px;
+  background-image: linear-gradient(
+    180.05deg,
+    rgba(1, 28, 68, 0) 48.53%,
+    rgba(1, 28, 68, 0.725825) 84.61%,
+    var(--primary-dark-cl) 101.39%
+  );
+  border-radius: 4px 120px;
+  @media screen and (min-width: $bp-desktop) {
+    height: 456px;
+  }
+
+  &__image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    border-radius: 4px 120px;
+  }
+
+  &__name {
+    position: absolute;
+    bottom: 32px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: var(--primary-white-cl);
+    max-width: 152px;
+    margin: 0 auto;
+  }
+}

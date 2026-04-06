@@ -1,0 +1,42 @@
+.btn {
+  display: flex;
+  align-items: center;
+  padding: 12px 24px;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: var(--main-font);
+  color: var(--primary-white-cl);
+  background: var(--primary-light-cl);
+  border-radius: 32px;
+  border: none;
+  cursor: pointer;
+  transition:
+    color 0.2s,
+    background 0.2s;
+
+  @media screen and (min-width: $bp-tablet) {
+    padding: 16px 32px;
+    font-size: 18px;
+  }
+  &:hover {
+    color: var(--primary-dark-cl);
+    background: var(--primary-white-cl);
+    outline: 2px solid var(--primary-light-cl);
+  }
+
+  &--submit {
+    margin: 0 auto 8px;
+    width: 241px;
+    @media screen and (min-width: $bp-tablet) {
+      width: 281px;
+    }
+  }
+  &--small {
+    width: 186px;
+    margin: 0 auto 8px;
+    @media screen and (min-width: $bp-tablet) {
+      width: 219px;
+      margin: 0 0 14px 0;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+.form-terms {
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.5;
+  color: var(--secondary-light-cl);
+  
+  &__link {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+}

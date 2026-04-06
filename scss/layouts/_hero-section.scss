@@ -1,0 +1,126 @@
+.hero-section {
+  position: relative;
+  padding: 71px 0 44px;
+  margin-bottom: 8px;
+  background-image: url('../../images/hero/hero-img.jpg');
+  background-repeat: no-repeat;
+  background-position: center -60px;
+  background-size: 768px 420px;
+  min-height: 298px;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../../images/hero/hero-img@2x.jpg);
+    background-size: 768px 420px;
+  }
+  @media screen and (min-width: $bp-tablet) {
+    background-position: center top;
+    padding: 123px 0 157px 106px;
+    margin-bottom: 68px;
+    background-size: 1200px 687px;
+    min-height: 687px;
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-size: 1200px 687px;
+    }
+  }
+  @media screen and (min-width: $bp-desktop) {
+    background-position: right top;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      57deg,
+      #fff 10%,
+      rgba(255, 255, 255, 0.78) 44.46%,
+      rgba(255, 255, 255, 0.2) 58.9%,
+      rgba(255, 255, 255, 0) 72.45%
+    );
+    z-index: 1;
+    @media screen and (min-width: $bp-tablet) {
+      width: 50%;
+      background: linear-gradient(to right, #fff 40%, transparent 100%);
+    }
+  }
+
+  &__container {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    @media screen and (min-width: $bp-tablet) {
+      text-align: left;
+    }
+  }
+
+  &__text {
+    font-size: 12px;
+    line-height: 1.5;
+    margin-bottom: 0;
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 18px;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__title {
+    font-family: var(--secondary-font);
+    font-weight: 700;
+    font-size: 54px;
+    line-height: 0.8;
+    color: var(--primary-light-cl);
+    margin-bottom: 32px;
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 140px;
+      margin-bottom: 40px;
+      max-width: 530px;
+    }
+  }
+
+  &__descr {
+    font-size: 11px;
+    line-height: 1.5;
+    color: var(--secondary-dark-cl);
+    max-width: 238px;
+    margin: 0 auto;
+    text-align: center;
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 12px;
+      margin: 0;
+    }
+  }
+
+  &__wave-desktop {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  &__wave-desktop svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 25px;
+    @media screen and (min-width: $bp-tablet) {
+      height: 45px;
+    }
+    @media screen and (min-width: $bp-desktop) {
+      height: 68px;
+    }
+  }
+
+  &__wave-desktop .shape-fill {
+    fill: var(--primary-white-cl);
+  }
+}

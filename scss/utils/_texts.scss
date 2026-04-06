@@ -1,0 +1,13 @@
+.light-accent {
+  color: var(--primary-light-cl);
+}
+.light-accent-capital {
+  color: var(--primary-light-cl);
+  text-transform: capitalize;
+}
+.text-uppercase {
+  text-transform: capitalize;
+}
+.text-bold {
+  font-weight: 600;
+}

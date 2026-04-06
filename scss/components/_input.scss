@@ -1,0 +1,37 @@
+.input {
+  position: relative;
+  margin-bottom: 16px;
+  @media screen and (min-width: $bp-tablet) {
+    margin-bottom: 24px;
+  }
+
+  &__control {
+    padding: 16px 24px;
+    width: 100%;
+    font-size: 13px;
+    border: 2px solid var(--secondary-light-cl);
+    background: transparent;
+    border-radius: 24px;
+    color: var(--primary-white-cl);
+    @media screen and (min-width: $bp-tablet) {
+      padding: 18px 32px;
+      border-radius: 32px;
+    }
+    &::placeholder {
+      color: var(--primary-white-cl);
+    }
+    &:focus {
+      background-color: var(--secondary-light-cl);
+      outline: none;
+    }
+  }
+  &__label {
+    position: absolute;
+    top: 16px;
+    left: 24px;
+    @media screen and (min-width: $bp-tablet) {
+      top: 18px;
+      left: 32px;
+    }
+  }
+}

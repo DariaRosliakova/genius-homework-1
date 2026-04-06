@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family: var(--main-font);
+  color: var(--primary-dark-cl);
+  background-color: var(--primary-white-cl);
+  font-size: 18px;
+  font-weight: 400;
+  @media screen and (min-width: $bp-tablet) {
+    font-size: 22px;
+  }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+a {
+  display: inline-block; /* щоб посилання не було ширше ніж треба  */
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+address {
+  font-style: normal;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}

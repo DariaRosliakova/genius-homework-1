@@ -1,0 +1,16 @@
+:root {
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Play', sans-serif;
+
+  --primary-white-cl: #ffffff;
+  --primary-light-cl: #2b7fff;
+  --primary-dark-cl: #011c44;
+  --secondary-dark-cl: #4a4a4a;
+  --secondary-light-cl: #747272;
+  --secondary-blue-cl: #011f4a;
+  --secondary-yellow-cl: #ffd02b;
+}
+
+$bp-mobile: 480px;
+$bp-tablet: 768px;
+$bp-desktop: 1200px;
