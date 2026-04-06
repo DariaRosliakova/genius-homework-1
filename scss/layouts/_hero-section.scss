@@ -2,7 +2,7 @@
   position: relative;
   padding: 71px 0 44px;
   margin-bottom: 8px;
-  background-image: url('../../images/hero/hero-img.jpg');
+  background-image: url('../images/hero/hero-img.jpg');
   background-repeat: no-repeat;
   background-position: center -60px;
   background-size: 768px 420px;
@@ -11,7 +11,7 @@
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-    background-image: url(../../images/hero/hero-img@2x.jpg);
+    background-image: url('../images/hero/hero-img@2x.jpg');
     background-size: 768px 420px;
   }
   @media screen and (min-width: $bp-tablet) {
