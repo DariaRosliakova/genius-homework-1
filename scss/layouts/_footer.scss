@@ -2,10 +2,11 @@
   position: relative;
   padding: 32px 0 66px;
   background: var(--primary-dark-cl)
-    url(/images/backgrounds/footer-mobile-background.svg) no-repeat center/cover;
+    url(../../images/backgrounds/footer-mobile-background.svg) no-repeat
+    center/cover;
   @media screen and (min-width: $bp-tablet) {
     padding: 56px 0;
-    background-image: url(/images/backgrounds/footer-background.svg);
+    background-image: url(../../images/backgrounds/footer-background.svg);
   }
   &::before {
     display: none;
